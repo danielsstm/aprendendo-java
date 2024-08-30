@@ -1,0 +1,48 @@
+package primeiro;
+import java.util.Scanner;
+
+public class primeiro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("hello world");
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escreva o dia da semana");
+		
+		int x =sc.nextInt();
+		String dia;
+		
+		switch (x) {
+		case 1:
+			dia = "domingo";
+			break;
+		case 2:
+			dia ="segunda-feira";
+			break;
+		case 3:
+			dia ="terça-feira";
+			break;
+		case 4:
+			dia ="quarta-feira";
+			break;
+		case 5:
+			dia ="quinta-feira";
+			break;
+		case 6:
+			dia ="sexta-feira";
+			break;
+		case 7:
+			dia = "sábado";
+			break;
+		default:
+			dia = "valor inválido";
+			break;
+			
+		}
+		
+		System.out.println("O dia da semana: " + dia);
+
+	}
+
+}
