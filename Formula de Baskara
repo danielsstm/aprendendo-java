@@ -1,0 +1,43 @@
+package primeiro;
+import java.util.Scanner;
+public class primeiro {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double a , b, c, delta, x1, x2, xv, yv;
+		
+		System.out.println("Digite o valor de a: ");
+		a = sc.nextDouble();
+		System.out.println("Digite o valor de b: ");
+		b = sc.nextDouble();
+		System.out.println("Digite o valor de c: ");
+		c = sc.nextDouble();
+		
+		delta = b * b - 4 * a * c;
+		
+		System.out.println("O valor de delta e: " + delta);
+		
+		if (delta < 0) {
+			System.out.println("Número vazio");
+		}
+		else {
+		double raizdelta = Math.sqrt(delta);
+		
+		x1 = (0-b + raizdelta) / (2 * a);
+		
+		x2 = (0-b - raizdelta) / (2 * a);
+		
+		xv = -(b/(2*a));
+		yv = -delta/(4*a);
+		
+		System.out.println("O resultado de x1 é: " + x1);
+		System.out.println("O resultado de x2 é: " + x2);
+		System.out.println("O resultado de xv é: " + xv);
+		System.out.println("O resultado de yv é: " + yv);
+		}
+
+		sc.close();
+
+    }
+    
+}
